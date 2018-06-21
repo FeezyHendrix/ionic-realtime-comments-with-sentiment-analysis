@@ -1,14 +1,43 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Live Comments
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <!-- example blog post-->
+  <h1 text-center> Interesting Article</h1>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    Once you're done creating the quality content,you still have the challenge of presenting it that clearly dictates what your blog is about. Images, text, and links need to be shown off just right -- otherwise, readers might abandon your content if it's not aesthetically showcased in a way that's both appealing and easy to follow. </p>
+
+    <div class="flex-items">
+        <ion-row>
+            <ion-col col-6>
+                  <h1 float-right>{{rating.good}} <ion-icon  name="arrow-round-up" style="color : #90EE90; font-size: 25px;"></ion-icon></h1>
+            </ion-col>
+            <ion-col col-6>
+                <h1>{{rating.bad}} <ion-icon name="arrow-round-down" style="color: #FF0000; font-size: 25px;"></ion-icon></h1>
+            </ion-col>
+          </ion-row>
+    </div>
+
+    <div class="comment-box">
+      <ion-card *ngFor="let comment of comments">
+        <ion-card-content>
+              <strong>{{comment.message}}</strong>
+              <p>
+               {{comment.timeStamp | date : 'H:mm a'}}
+              </p>
+        </ion-card-content>
+       
+      </ion-card>
+    </div>
+
+  <ion-footer padding>
+    <ion-textarea [(ngModel)]="message" type="text" placeholder="Comment .... "></ion-textarea>
+    <button ion-button small float-right round (click)="sendMessage()">Send</button>
+  </ion-footer>
+  
 </ion-content>

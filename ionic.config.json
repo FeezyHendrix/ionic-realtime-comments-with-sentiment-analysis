@@ -1,6 +1,7 @@
 {
-  "name": "live-comments",
-  "app_id": "",
-  "type": "ionic-angular",
-  "integrations": {}
-}
+    "name": "livecomments",
+    "app_id": "",
+    "type": "ionic-angular",
+    "integrations": {}
+  }
+  
