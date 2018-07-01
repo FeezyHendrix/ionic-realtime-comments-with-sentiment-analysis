@@ -12,7 +12,7 @@ export class PusherServiceProvider {
   cluster: 'eu',
   encrypted: true,
   });
-  this.channel = pusher.subscribe('chat');
+  this.channel = pusher.subscribe('comments');
 }
 
 
