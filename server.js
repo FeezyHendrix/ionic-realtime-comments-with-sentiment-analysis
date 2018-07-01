@@ -42,7 +42,7 @@ app.post('/message', async (req, res) => {
   };
 
     try {
-    pusher.trigger('chat', 'message', data);
+    pusher.trigger('comments', 'message', data);
   } catch (e) {
     console.log(e);
   }
