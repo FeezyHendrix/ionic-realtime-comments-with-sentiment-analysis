@@ -2,7 +2,7 @@
 
 Demostrating how to build a realtime comment and sentiment analysis app using Pusher, Node.js and Ionic
 <br>
-Follow the tutorial on (Pusher)[https://pusher.com/tutorials/live-comments-ionic]
+Follow the tutorial on [Pusher](https://pusher.com/tutorials/live-comments-ionic)
 
 ## Getting Started
 
