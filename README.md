@@ -28,5 +28,5 @@ What things you need to install the software and how to install them
 * [Pusher](https://pusher.com/) - APIs to enable devs building realtime features
 * [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
 * [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-* [Ionic](https://ionicframework.com/) - Build amazing apps in one codebase, for any platform, with the web.\
+* [Ionic](https://ionicframework.com/) - Build amazing apps in one codebase, for any platform, with the web.
 
